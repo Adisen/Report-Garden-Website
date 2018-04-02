@@ -1,0 +1,449 @@
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #2A135B;
+    color: #fff;
+    text-align: center;
+}
+* {
+    /* overflow: hidden; */
+}
+
+#body {
+    background-image: url("img/bg.png");
+    background-size: contain;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    padding: .7rem;
+    /* border: 1px solid #00D3FF; */
+}
+
+hr {
+    width: 7%;
+    margin: .3rem auto;
+    opacity: .2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* - - - - - - - - - - - - - Header Styles - - - - - - - - - - - -  */
+
+header {
+    height: 100vh;
+    background-image: url("img/showcase-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    /* position: fixed; */
+}
+
+nav {
+    /* position: fixed; */
+    width: 100%;
+    /* background: #00D3FF; */
+    /* height: 0; */
+    display: none;
+    z-index: 2;
+    /* height: 50vh; */
+ }/*Nav will be hidden in mobile view until burger icon is clicked */
+
+nav a{
+    font-size: 1.3rem;
+    opacity: .4;
+    padding: .5rem;
+    display: block;
+    position: relative;
+}
+
+#showcase {
+    /* position: relative;
+    top: 15%; */
+    text-align: left;
+    /* margin: 2rem; */
+    line-height: 1.2;
+    overflow: hidden;
+    height: 80%;
+}
+
+#showcase .container {
+    position: sticky;
+    top: 25%;
+}
+
+#showcase h1 {
+    position: relative;
+    font-size: 2rem;
+    animation: heading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% {left: -500px}
+    100%{ left: 0}
+}
+
+#showcase h1 span {
+    color: #00D3FF;
+}
+
+#showcase p {
+    position: relative;
+    opacity: .6;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    animation-name: sub-heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sub-heading {
+    0% { left: 200%}
+    100%{ left: 0}
+}
+
+#showcase a {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#00D3FF), to(#DE00D6));
+    /* background-image: -webkit-linear-gradient(top, #00D3FF, #DE00D6);
+    background-image: -moz-linear-gradient(bottom, #00D3FF, #DE00D6);
+    background-image: linear-gradient(to bottom, #00D3FF, #DE00D6); */
+    /* margin-top: 8rem; */
+    animation-name: button;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    0% {
+        bottom: -600px;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+
+
+/* - - - - - - - - - - - - - Features Styles - - - - - - - - - - - -  */
+#features {
+    padding: 2rem 0;
+}
+#features h2 {
+    padding: 0;
+    margin: 0;
+}
+#features h2 span {
+    color: #00D3FF;
+}
+
+#features .label {
+    /* height: 200px; */
+    width: 200px;
+    margin: 1rem auto;
+    padding: 0;
+}
+
+#features .label h3 {
+    background: #1B00A7;
+    margin: 0;
+    border-radius: 6px 6px 0 0;
+    padding: 1.5rem;
+    text-align: right;
+}
+
+.label .content {
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 0 0 6px 6px;
+}
+
+.label h4 {
+    font-size: 1rem;
+    text-align: 
+}
+
+.label p {
+    font-size: .5rem;
+    opacity: .6;
+}
+
+.label a {
+    color: #140A47;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+/* - - - - - - - - - - - - - Services Styles - - - - - - - - - - - -  */
+#services {
+    padding: 2rem 0;
+    background-color: #160B4A;
+}
+
+#services h2 span {
+    color: #00D3FF;
+}
+
+#services .service {
+    text-align: left;
+    padding: 1rem 0;
+}
+
+#services .service img {
+    width: 2rem;
+}
+
+#services .service h3 {
+    font-size: .9rem;
+    padding: .5rem 0;
+}
+
+#services .service p {
+    font-size: .75rem;
+    padding: 0;
+    margin: 0;
+    opacity: .5
+}
+
+/* - - - - - - - - - - - - - Testimonial Styles - - - - - - - - - - - -  */
+#testimonial {
+    padding: 2rem 0;
+    /* background-color: #160B4A; */
+}
+
+#testimonial h2 span {
+    color: #00D3FF;
+}
+
+.testimonial {
+    padding: 2rem 0;
+    /* margin-bottom: 3rem; */
+    text-align: left;
+}
+
+.testimonial h3 {
+    color: #00D3FF;
+}
+
+.testimonial h4 {
+    opacity: .4;
+}
+
+.testimonial img {
+    width: 3rem;
+}
+
+.testimonial p {
+    padding: 0;
+    margin: 0; 
+}
+
+.testimony {
+    background-color: #0E0848;
+    /* padding: .4rem; */
+}
+
+.testimony img {
+    width: 2rem;
+    padding: 1.5rem;
+    float: left;
+    display: inline;    
+}
+
+.testimony p {
+    clear: right;
+    padding: 1rem;
+}
+
+.testimonial .info {
+    padding: 1rem;
+}
+
+#trial-message {
+    background-color: #1B00A7;
+    height: 80px;
+}
+
+#trial-message .btn {
+    background-color: #fff;
+    color: #100848;
+    text-transform: uppercase;
+    margin: 6rem;
+}
+
+/* - - - - - - - - - - - - - Footer Styles - - - - - - - - - - - -  */
+footer {
+    background-color: #100848;
+    padding: 2rem 0;
+}
+
+footer h4 {
+    color: #00D3FF;
+    padding: 1rem;
+}
+
+footer a, footer p {
+    display: block;
+    opacity: .6;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* - - - - - - - - - - - - - Media Queries - - - - - - - - - - - -  */
+@media screen and (min-width: 768px) {    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    #logo {
+        font-size: 2rem;
+        padding: .5rem;
+    }
+    
+    nav {
+        display: block;
+    }
+    
+    nav a{
+        font-size: 1.5rem;
+        opacity: .5;
+        display: inline;
+    }
+    
+    #showcase {
+        line-height: 1;
+    }
+    
+    #showcase .container {
+        position: sticky;
+        top: 25%;
+    }
+    
+    #showcase h1 {
+        font-size: 2.5rem;
+    }
+    
+    #showcase p {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    #showcase a {
+       font-size: 1.5rem;
+    }    
+    
+    /* - - - - - - - - - - - - - Features Styles - - - - - - - - - - - -  */
+    #features .label {
+        width: 300px;
+    }
+    
+    #features .label h3 {
+        font-size: 2rem;
+    }
+    
+    .label h4 {
+        font-size: 1.5rem;
+    }
+    
+    .label p {
+        font-size: 1rem;
+        opacity: .7;
+    }
+    
+    .label a {
+        font-size: 1rem;
+    }
+
+    /* - - - - - - - - - - - - - Services Styles - - - - - - - - - - - -  */
+    #all-services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        grid-gap: 2rem;
+    }
+
+    #services .service img {
+        width: 2.5rem;
+    }
+
+    #services .service h3 {
+        font-size: 1.2rem;
+    }
+
+    #services .service p {
+        font-size: 1rem;
+    }
+
+    /* - - - - - - - - - - - - - Testimonial Styles - - - - - - - - - - - -  */
+
+    .testimonial h3 {
+        font-size: 1.7rem;
+    }
+
+    .testimonial h4 {
+        font-size: 1.4rem;
+    }
+
+    .testimonial img {
+        width: 4rem;
+    }
+
+    .testimonial p {
+        font-size: 1.5rem;
+    }
+
+    .testimony img {
+        width: 3rem;
+        display: block;    
+    }
+
+    /* - - - - - - - - - - - - - Footer Styles - - - - - - - - - - - -  */
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(autofill, minmax(240px, 1fr));
+    }
+
+    footer h4 {
+        font-size: 1.5rem;
+    }
+
+    footer a, footer p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024) {
+    
+}
