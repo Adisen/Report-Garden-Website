@@ -51,24 +51,31 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
+    padding-top: 1.5rem;
 }
 
 #logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    float: left;
     text-transform: uppercase;
     text-align: center;
-    padding: 1rem;
-    /* position: fixed; */
+    padding: .4rem;
+    font-weight: bold;
+}
+
+#menu {
+    float: right;
+    padding: .4rem 1rem;;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: .7rem;
 }
 
 nav {
-    /* position: fixed; */
     width: 100%;
-    /* background: #00D3FF; */
-    /* height: 0; */
     display: none;
     z-index: 2;
-    /* height: 50vh; */
  }/*Nav will be hidden in mobile view until burger icon is clicked */
 
 nav a{
@@ -80,18 +87,17 @@ nav a{
 }
 
 #showcase {
-    /* position: relative;
-    top: 15%; */
+    clear: both;
     text-align: left;
-    /* margin: 2rem; */
     line-height: 1.2;
     overflow: hidden;
     height: 80%;
 }
 
-#showcase .container {
-    position: sticky;
-    top: 25%;
+#showcase #container {
+    width: 60%;
+    position: absolute;
+    top: 30%;
 }
 
 #showcase h1 {
@@ -301,6 +307,7 @@ nav a{
 footer {
     background-color: #100848;
     padding: 2rem 0;
+    line-height: 1.3rem;
 }
 
 footer h4 {
@@ -321,31 +328,28 @@ footer p {
 /* - - - - - - - - - - - - - Media Queries - - - - - - - - - - - -  */
 @media screen and (min-width: 768px) {    
     h2 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     
     #logo {
-        font-size: 2rem;
+        font-size: 1rem;
         padding: .5rem;
     }
     
     nav {
         display: block;
+        width: 100%;
     }
     
     nav a{
-        font-size: 1.5rem;
+        font-size: .8rem;
         opacity: .5;
         display: inline;
+        padding: 0 1.3rem;
     }
     
     #showcase {
         line-height: 1;
-    }
-    
-    #showcase .container {
-        position: sticky;
-        top: 25%;
     }
     
     #showcase h1 {
@@ -386,7 +390,7 @@ footer p {
     /* - - - - - - - - - - - - - Services Styles - - - - - - - - - - - -  */
     #all-services {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
         grid-gap: 2rem;
     }
 
@@ -432,11 +436,11 @@ footer p {
     }
 
     footer h4 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     footer a, footer p {
-        font-size: 1rem;
+        font-size: .6rem;
     }
 
     footer p {
@@ -444,6 +448,92 @@ footer p {
     }
 }
 
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 960px) {
+    header {
+        padding-top: 2rem;
+    }
+
+    #logo {
+        font-size: .8rem;
+        float: left;
+    }
     
+    nav {
+        display: inline-block;
+        width: 80%;
+        text-align: right;
+     }
+    
+    nav a{
+        font-size: .7rem;
+        padding: .5rem;
+        display: inline;
+        
+    }
+    
+    #showcase {
+        clear: both;
+    }
+    
+    #showcase h1 {
+        font-size: 2rem;
+    }
+    
+    
+    /* - - - - - - - - - - - - - Features Styles - - - - - - - - - - - -  */   
+    #all-features {
+        width: 80%;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #features .label {
+        width: 200px;
+    }
+    
+    #features .label h3 {
+        font-size: 1.5rem;
+    }
+    
+    .label h4 {
+        font-size: 1rem;
+    }
+    
+    .label p {
+        font-size: .5rem;
+    }
+    
+    .label a {
+        font-size: .8rem;
+    }
+    /* - - - - - - - - - - - - - Testimonial Styles - - - - - - - - - - - -  */
+    #testimonial #all-testimonies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    
+    .testimonial {
+        padding: 2rem 2rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .testimonial h3 {
+        font-size: 1rem;
+    }
+    
+    .testimonial h4 {
+        font-size: .7rem;
+    }
+    
+    .testimonial p {
+       font-size: .8rem;
+    }
+    
+    /* - - - - - - - - - - - - - Footer Styles - - - - - - - - - - - -  */
+    footer .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }  
 }
