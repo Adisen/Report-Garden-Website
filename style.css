@@ -1,14 +1,11 @@
-body, html {
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #2A135B;
     color: #fff;
     text-align: center;
-}
-* {
-    /* overflow: hidden; */
 }
 
 #body {
@@ -73,17 +70,20 @@ header {
 }
 
 nav {
-    width: 100%;
+    background: #000;
+    width: 80%;
+    position: absolute;
     display: none;
     z-index: 2;
- }/*Nav will be hidden in mobile view until burger icon is clicked */
+    margin: 2rem auto 0;
+ }
 
  .show {
      display: block;
  }
 
 nav a{
-    font-size: 1.3rem;
+    font-size: .7rem;
     opacity: .4;
     padding: .5rem;
     display: block;
@@ -107,15 +107,15 @@ nav a{
 #showcase h1 {
     position: relative;
     font-size: 2rem;
-    /* animation: heading;
+    animation: heading;
     animation-duration: 1s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
-/* @keyframes heading {
+@keyframes heading {
     0% {left: -500px}
     100%{ left: 0}
-} */
+}
 
 #showcase h1 span {
     color: #00D3FF;
@@ -126,15 +126,15 @@ nav a{
     opacity: .6;
     font-weight: lighter;
     margin-bottom: 2rem;
-    /* animation-name: sub-heading;
+    animation-name: sub-heading;
     animation-duration: 2s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
-/* @keyframes sub-heading {
+@keyframes sub-heading {
     0% { left: 200%}
     100%{ left: 0}
-} */
+}
 
 #showcase a {
     position: relative;
@@ -142,20 +142,20 @@ nav a{
     /* background-image: -webkit-linear-gradient(top, #00D3FF, #DE00D6);
     background-image: -moz-linear-gradient(bottom, #00D3FF, #DE00D6);
     background-image: linear-gradient(to bottom, #00D3FF, #DE00D6); */
-    /* margin-top: 8rem; */
-    /* animation-name: button;
+    margin-top: 8rem;
+    animation-name: button;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
-/* @keyframes button {
+@keyframes button {
     0% {
         bottom: -600px;
     }
     100% {
         bottom: 10px;
     }
-} */
+}
 
 
 /* - - - - - - - - - - - - - Features Styles - - - - - - - - - - - -  */
@@ -345,6 +345,9 @@ footer p {
     nav {
         display: block;
         width: 100%;
+        background: transparent;
+        position: static;
+        margin: .2rem;
     }
     
     nav a{
