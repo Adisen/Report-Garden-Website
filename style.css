@@ -78,6 +78,10 @@ nav {
     z-index: 2;
  }/*Nav will be hidden in mobile view until burger icon is clicked */
 
+ .show {
+     display: block;
+ }
+
 nav a{
     font-size: 1.3rem;
     opacity: .4;
@@ -103,15 +107,15 @@ nav a{
 #showcase h1 {
     position: relative;
     font-size: 2rem;
-    animation: heading;
+    /* animation: heading;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-@keyframes heading {
+/* @keyframes heading {
     0% {left: -500px}
     100%{ left: 0}
-}
+} */
 
 #showcase h1 span {
     color: #00D3FF;
@@ -122,15 +126,15 @@ nav a{
     opacity: .6;
     font-weight: lighter;
     margin-bottom: 2rem;
-    animation-name: sub-heading;
+    /* animation-name: sub-heading;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-@keyframes sub-heading {
+/* @keyframes sub-heading {
     0% { left: 200%}
     100%{ left: 0}
-}
+} */
 
 #showcase a {
     position: relative;
@@ -139,25 +143,26 @@ nav a{
     background-image: -moz-linear-gradient(bottom, #00D3FF, #DE00D6);
     background-image: linear-gradient(to bottom, #00D3FF, #DE00D6); */
     /* margin-top: 8rem; */
-    animation-name: button;
+    /* animation-name: button;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-@keyframes button {
+/* @keyframes button {
     0% {
         bottom: -600px;
     }
     100% {
         bottom: 10px;
     }
-}
+} */
 
 
 /* - - - - - - - - - - - - - Features Styles - - - - - - - - - - - -  */
 #features {
     padding: 2rem 0;
 }
+
 #features h2 {
     padding: 0;
     margin: 0;
@@ -334,6 +339,7 @@ footer p {
     #logo {
         font-size: 1rem;
         padding: .5rem;
+        float: none;
     }
     
     nav {
@@ -346,6 +352,10 @@ footer p {
         opacity: .5;
         display: inline;
         padding: 0 1.3rem;
+    }
+
+    #menu {
+        display: none;
     }
     
     #showcase {
